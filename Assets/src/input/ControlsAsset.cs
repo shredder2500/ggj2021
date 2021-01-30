@@ -7,6 +7,7 @@ public class ControlsAsset : ScriptableObject
   private Controls _controls;
   
   public event Action<Vector2> OnMoveInput;
+  public event Action Interact;
 
   public void Init()
   {
@@ -16,5 +17,9 @@ public class ControlsAsset : ScriptableObject
 
     _controls.GamePlay.Move.performed += ctx => OnMoveInput?.Invoke(ctx.ReadValue<Vector2>());
     _controls.GamePlay.Move.canceled += _ => OnMoveInput?.Invoke(Vector2.zero);
+    _controls.GamePlay.Interact.performed += _ => Interact?.Invoke();
   }
+
+  public void DisableGamePlay() => _controls.GamePlay.Disable();
+  public void EnableGamePlay() => _controls.GamePlay.Enable();
 }

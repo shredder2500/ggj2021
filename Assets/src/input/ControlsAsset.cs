@@ -19,8 +19,13 @@ public class ControlsAsset : ScriptableObject
     _controls.GamePlay.Move.performed += ctx => OnMoveInput?.Invoke(ctx.ReadValue<Vector2>());
     _controls.GamePlay.Move.canceled += _ => OnMoveInput?.Invoke(Vector2.zero);
     _controls.GamePlay.Interact.performed += _ => Interact?.Invoke();
+
+    _controls.UI.Submit.performed += _ => Submit?.Invoke();
   }
 
   public void DisableGamePlay() => _controls.GamePlay.Disable();
   public void EnableGamePlay() => _controls.GamePlay.Enable();
+
+  public void EnableUIControls() => _controls.UI.Enable();
+  public void DisableUIControls() => _controls.UI.Disable();
 }

@@ -20,7 +20,7 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
   
   [SerializeField] private Button optionBtn;
   [SerializeField] private ControlsAsset controls;
-  [SerializeField] private float displaySpeed = .25f;
+  [SerializeField] private float displaySpeed = .05f;
 
   private ArticyFlowPlayer _flowPlayer;
   private List<(string displayText, Branch branch)> _options;
@@ -30,7 +30,6 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
   private void Start()
   {
     _flowPlayer = GetComponent<ArticyFlowPlayer>();
-    controls.Submit += () => skip = true;
   }
   
   public void OnFlowPlayerPaused(IFlowObject aObject)
@@ -41,11 +40,13 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
     {
       dialogueCanvas.gameObject.SetActive(false);
       controls.EnableGamePlay();
+      controls.DisableUIControls();
       return;
     }
 
     dialogueCanvas.gameObject.SetActive(true);
     controls.DisableGamePlay();
+    controls.EnableUIControls();
 
     if (aObject is IObjectWithText textObj)
     {
@@ -71,6 +72,7 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
   private IEnumerator DisplayText(string text)
   {
     skip = false;
+    controls.Submit += Skip;
     EventSystem.current.SetSelectedGameObject(null);
     for (var i = 0; i < text.Length; i++)
     {
@@ -80,6 +82,8 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
         yield return new WaitForSeconds(displaySpeed);
       }
     }
+
+    controls.Submit -= Skip;
     _options.ForEach(option =>
     {
       var btn = Instantiate(optionBtn, optionsContainer);
@@ -110,4 +114,6 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
       });
     }
   }
+
+  private void Skip() => skip = true;
 }

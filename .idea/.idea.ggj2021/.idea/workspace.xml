@@ -20,23 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/planet benson 2.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/planet benson 2.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/read-this.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/read-this.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/typodermic-eula-02-2014.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Fonts/planet-benson-2/typodermic-eula-02-2014.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Controls.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/input/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/input/Controls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +99,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="10242000" />
+      <workItem from="1611961756024" duration="11587000" />
     </task>
     <servers />
   </component>

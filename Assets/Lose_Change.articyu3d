@@ -5,8 +5,8 @@
     "set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
     "set_UseScriptSupport": "True",
     "ExportVersion": "1.2",
-    "ObjectDefinitionsHash": "7A877520F5D90913E765530F8ED1D9C5DD0854078B7BB559438DEB725225C17B",
-    "ScriptFragmentsHash": "1833774840"
+    "ObjectDefinitionsHash": "E2A9D400700790AD5EC38811E257D9D55337EB884D6D09241AD5D7D512E3DE6F",
+    "ScriptFragmentsHash": "2384722933"
   },
   "Project": {
     "Name": "Lose Change",
@@ -78,6 +78,18 @@
           "Type": "Boolean",
           "Value": "False",
           "Description": "Does the player have the cigar?"
+        }
+      ]
+    },
+    {
+      "Namespace": "KIMBO",
+      "Description": "",
+      "Variables": [
+        {
+          "Variable": "HasBeenTalkedTo",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "Has the player talked to KIMBO?"
         }
       ]
     }
@@ -2315,7 +2327,7 @@
             "Text": "This is Roma's dialogue exchange.",
             "ExternalId": "",
             "Position": {
-              "x": 992.0,
+              "x": 1342.0,
               "y": 375.0
             },
             "ZIndex": 1.0,
@@ -2424,7 +2436,7 @@
             "Id": "0x0100000000000429",
             "Parent": "0x0300000043CE43F7",
             "Attachments": [],
-            "DisplayName": "KIMBO",
+            "DisplayName": "Waking up",
             "PreviewImage": {
               "ViewBox": {
                 "x": 0.0,
@@ -2440,7 +2452,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "KIMBO DIALOGUE IS TRIDE AND TRUE, YES YES, H'YUP!",
+            "Text": "This is when you wake up after being pushed.",
             "ExternalId": "",
             "Position": {
               "x": 642.0,
@@ -2456,7 +2468,20 @@
               {
                 "Text": "",
                 "Id": "0x010000000000042C",
-                "Owner": "0x0100000000000429"
+                "Owner": "0x0100000000000429",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000566",
+                    "Target": "0x0100000000000563"
+                  }
+                ]
               }
             ],
             "OutputPins": [
@@ -2494,7 +2519,7 @@
             "Text": "This is Lockette's dialogue exchange.",
             "ExternalId": "",
             "Position": {
-              "x": 1342.0,
+              "x": 1692.0,
               "y": 375.0
             },
             "ZIndex": 3.0,
@@ -2579,6 +2604,70 @@
                 "Text": "",
                 "Id": "0x010000000000052E",
                 "Owner": "0x010000000000052A"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Dialogue",
+          "Properties": {
+            "TechnicalName": "Dlg_F182966D",
+            "Id": "0x01000000000005AB",
+            "Parent": "0x0300000043CE43F7",
+            "Attachments": [],
+            "DisplayName": "KIMBO Dialogue",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0100000000000226"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "KIMBO DIALOGUE IS TRIDE AND TRUE, YES YES, H'YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 992.0,
+              "y": 375.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 291.0,
+              "h": 200.0
+            },
+            "ShortId": 4051867245,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005AE",
+                "Owner": "0x01000000000005AB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005B8",
+                    "Target": "0x01000000000005B7"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005AF",
+                "Owner": "0x01000000000005AB"
               }
             ]
           }
@@ -6068,7 +6157,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "I’s call it destiny, lil dime a dozen.",
+            "Text": "I’s call it destiny, lil' dime a dozen.",
             "ExternalId": "",
             "Position": {
               "x": 1650.0,
@@ -6849,6 +6938,281 @@
         {
           "Type": "DialogueFragment",
           "Properties": {
+            "TechnicalName": "DFr_BA9260AC",
+            "Id": "0x0100000000000563",
+            "Parent": "0x0100000000000429",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000582",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "…",
+            "ExternalId": "",
+            "Position": {
+              "x": 375.0,
+              "y": 525.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3130155180,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000566",
+                "Owner": "0x0100000000000563"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000567",
+                "Owner": "0x0100000000000563",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000058A",
+                    "Target": "0x0100000000000587"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_52097229",
+            "Id": "0x0100000000000587",
+            "Parent": "0x0100000000000429",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000582",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "... UP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 650.0,
+              "y": 525.0
+            },
+            "ZIndex": 8.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1376350761,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000058A",
+                "Owner": "0x0100000000000587"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000058B",
+                "Owner": "0x0100000000000587",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000591",
+                    "Target": "0x010000000000058E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_2B47AEAD",
+            "Id": "0x010000000000058E",
+            "Parent": "0x0100000000000429",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000582",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "… H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 925.0,
+              "y": 525.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 726118061,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000591",
+                "Owner": "0x010000000000058E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000592",
+                "Owner": "0x010000000000058E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000596",
+                    "Target": "0x0100000000000593"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_5503BAB6",
+            "Id": "0x0100000000000593",
+            "Parent": "0x0100000000000429",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Uuoohh… had to land head’s down.",
+            "ExternalId": "",
+            "Position": {
+              "x": 1200.0,
+              "y": 525.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1426307766,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000596",
+                "Owner": "0x0100000000000593"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000597",
+                "Owner": "0x0100000000000593",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000059B",
+                    "Target": "0x0100000000000598"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_09B24348",
+            "Id": "0x0100000000000598",
+            "Parent": "0x0100000000000429",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000582",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "UP, UP! ON YOUR FEET, FRIEND! OR FOE!? H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1475.0,
+              "y": 525.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 162677576,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000059B",
+                "Owner": "0x0100000000000598"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000059C",
+                "Owner": "0x0100000000000598",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000059F",
+                    "Target": "0x010000000000059D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
             "TechnicalName": "DFr_F31141B1",
             "Id": "0x0100000000000537",
             "Parent": "0x010000000000052A",
@@ -6957,6 +7321,2374 @@
           }
         },
         {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6534A384",
+            "Id": "0x01000000000005C3",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "WAH!",
+            "ExternalId": "",
+            "Position": {
+              "x": 925.0,
+              "y": 650.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1697948548,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005C6",
+                "Owner": "0x01000000000005C3"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005C7",
+                "Owner": "0x01000000000005C3",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005CB",
+                    "Target": "0x01000000000005C8"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_10152790",
+            "Id": "0x01000000000005C8",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "UNSLEEPENED, AT LAST!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1200.0,
+              "y": 650.0
+            },
+            "ZIndex": 7.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 269821840,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005CB",
+                "Owner": "0x01000000000005C8"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005CC",
+                "Owner": "0x01000000000005C8",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005D3",
+                    "Target": "0x01000000000005D2"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A04BA8DE",
+            "Id": "0x01000000000005CD",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "FLUSTERED? AN ASTUTE REACTION, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 650.0
+            },
+            "ZIndex": 7.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2689312990,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005CE",
+                "Owner": "0x01000000000005CD"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005CF",
+                "Owner": "0x01000000000005CD",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005DC",
+                    "Target": "0x01000000000005DB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_84FD8EAA",
+            "Id": "0x01000000000005D2",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "W-Who… where…?",
+            "ExternalId": "",
+            "Position": {
+              "x": 1475.0,
+              "y": 650.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2231209642,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005D3",
+                "Owner": "0x01000000000005D2"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005D4",
+                "Owner": "0x01000000000005D2",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005CE",
+                    "Target": "0x01000000000005CD"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_D0C73DD6",
+            "Id": "0x01000000000005DB",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "IF THE YOU IS FOE, KIMBO WARP YOUR METAL WITH SHEAR STRENGTH!",
+            "ExternalId": "",
+            "Position": {
+              "x": 2025.0,
+              "y": 650.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3502718422,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005DC",
+                "Owner": "0x01000000000005DB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005DD",
+                "Owner": "0x01000000000005DB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005E1",
+                    "Target": "0x01000000000005E0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B01221D0",
+            "Id": "0x01000000000005E0",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Warp!?",
+            "ExternalId": "",
+            "Position": {
+              "x": 2300.0,
+              "y": 650.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2953978320,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005E1",
+                "Owner": "0x01000000000005E0"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005E2",
+                "Owner": "0x01000000000005E0",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005E6",
+                    "Target": "0x01000000000005E5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_50B68125",
+            "Id": "0x01000000000005E5",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "SO FEAR NOT, FRIENDEMY, OR DO! THE I COMMENCES WITH THE INTERROGAVIEW, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 2575.0,
+              "y": 650.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1354137893,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005E6",
+                "Owner": "0x01000000000005E5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005E7",
+                "Owner": "0x01000000000005E5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000604",
+                    "Target": "0x0100000000000602"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_0CB10224",
+            "Id": "0x01000000000005F4",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000022D",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "PAPPY!",
+            "ExternalId": "",
+            "Position": {
+              "x": 950.0,
+              "y": 125.0
+            },
+            "ZIndex": 20.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 212927012,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005F7",
+                "Owner": "0x01000000000005F4"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005F8",
+                "Owner": "0x01000000000005F4",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005FE",
+                    "Target": "0x01000000000005FB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A5036918",
+            "Id": "0x01000000000005FB",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "OH, OH MY BEAUTATIOUS LOCKETTE! H'YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 1225.0,
+              "y": 125.0
+            },
+            "ZIndex": 22.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2768464152,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005FE",
+                "Owner": "0x01000000000005FB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005FF",
+                "Owner": "0x01000000000005FB"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A1A3FA04",
+            "Id": "0x0100000000000608",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "Where am I?",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "I think I fell from way up there. What do you call this place, Kimbo?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3075.0,
+              "y": 400.0
+            },
+            "ZIndex": 26.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2711878148,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000060B",
+                "Owner": "0x0100000000000608"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000060C",
+                "Owner": "0x0100000000000608",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000621",
+                    "Target": "0x010000000000061E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_DE5B5370",
+            "Id": "0x010000000000060E",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "Who is Kimbo?",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Kimbo, eh? So what’s your deal.",
+            "ExternalId": "",
+            "Position": {
+              "x": 3075.0,
+              "y": 650.0
+            },
+            "ZIndex": 28.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3730527088,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000611",
+                "Owner": "0x010000000000060E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000612",
+                "Owner": "0x010000000000060E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000627",
+                    "Target": "0x0100000000000624"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_EF046781",
+            "Id": "0x0100000000000614",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "H’yup?",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "What’s with the odd sound you keep making? H’yup?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3075.0,
+              "y": 900.0
+            },
+            "ZIndex": 30.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4010043265,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000617",
+                "Owner": "0x0100000000000614"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000618",
+                "Owner": "0x0100000000000614",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000062D",
+                    "Target": "0x010000000000062A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_01F3F40A",
+            "Id": "0x010000000000061E",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "AHA, YES! HERE BE THE LOST LOWLANDS!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 400.0
+            },
+            "ZIndex": 32.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 32764938,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000621",
+                "Owner": "0x010000000000061E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000622",
+                "Owner": "0x010000000000061E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000634",
+                    "Target": "0x0100000000000631"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6C80558A",
+            "Id": "0x0100000000000624",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I? KIMBO IS KIMBO, HE/HIM! YES, YES!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 650.0
+            },
+            "ZIndex": 34.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1820349834,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000627",
+                "Owner": "0x0100000000000624"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000628",
+                "Owner": "0x0100000000000624",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000064B",
+                    "Target": "0x0100000000000648"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6CF4E3B2",
+            "Id": "0x010000000000062A",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "ODD? THE YOU NO LIKE TO SEE KIMBO’S FLEXERCISE?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3350.0,
+              "y": 900.0
+            },
+            "ZIndex": 36.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1827988402,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000062D",
+                "Owner": "0x010000000000062A"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000062E",
+                "Owner": "0x010000000000062A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000669",
+                    "Target": "0x0100000000000666"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C5C92044",
+            "Id": "0x0100000000000631",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "EVERYBODY HERE IS FAMILY OF THE LOSTNESS, EVEN’E FRIENDEMY!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3625.0,
+              "y": 400.0
+            },
+            "ZIndex": 38.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3318292548,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000634",
+                "Owner": "0x0100000000000631"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000635",
+                "Owner": "0x0100000000000631",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000063B",
+                    "Target": "0x0100000000000638"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F4B4E2E7",
+            "Id": "0x0100000000000638",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "UNLEST THE YOU IS FRIENDEFOE! YES, YES, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3900.0,
+              "y": 400.0
+            },
+            "ZIndex": 40.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4105495271,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000063B",
+                "Owner": "0x0100000000000638"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000063C",
+                "Owner": "0x0100000000000638",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000642",
+                    "Target": "0x010000000000063F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C8A18170",
+            "Id": "0x010000000000063F",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Oh, uhh… n-nice. I promise I mean no harm.",
+            "ExternalId": "",
+            "Position": {
+              "x": 4175.0,
+              "y": 400.0
+            },
+            "ZIndex": 42.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3366027632,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000642",
+                "Owner": "0x010000000000063F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000643",
+                "Owner": "0x010000000000063F"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_4D9643A8",
+            "Id": "0x0100000000000648",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I GUARD ENTRY AND EXIT TO LOWLANDS THROUGH GINORMINOUS DOOR, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3625.0,
+              "y": 650.0
+            },
+            "ZIndex": 44.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1301693352,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000064B",
+                "Owner": "0x0100000000000648"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000064C",
+                "Owner": "0x0100000000000648",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000652",
+                    "Target": "0x010000000000064F"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B989E175",
+            "Id": "0x010000000000064F",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Ah, it leads outside. May I pass by, please?",
+            "ExternalId": "",
+            "Position": {
+              "x": 3900.0,
+              "y": 650.0
+            },
+            "ZIndex": 46.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3112821109,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000652",
+                "Owner": "0x010000000000064F"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000653",
+                "Owner": "0x010000000000064F",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000659",
+                    "Target": "0x0100000000000656"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_1F8D1DC6",
+            "Id": "0x0100000000000656",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "ABSOLUTELY. INDUBITABLY. ASTOUNDINGLY.",
+            "ExternalId": "",
+            "Position": {
+              "x": 4175.0,
+              "y": 650.0
+            },
+            "ZIndex": 48.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 529341894,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000659",
+                "Owner": "0x0100000000000656"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000065A",
+                "Owner": "0x0100000000000656",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000660",
+                    "Target": "0x010000000000065D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_6064B38D",
+            "Id": "0x010000000000065D",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "NO!",
+            "ExternalId": "",
+            "Position": {
+              "x": 4450.0,
+              "y": 650.0
+            },
+            "ZIndex": 50.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1617212301,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000660",
+                "Owner": "0x010000000000065D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000661",
+                "Owner": "0x010000000000065D"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_877C7E1C",
+            "Id": "0x0100000000000666",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I GRUNTS IN EXUBERANTES WHEN’E SQUATTING. DEEP DIP DOWN, SHOOT UP LIKE ROCKETTE!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3625.0,
+              "y": 900.0
+            },
+            "ZIndex": 52.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2273082908,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000669",
+                "Owner": "0x0100000000000666"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000066A",
+                "Owner": "0x0100000000000666",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000670",
+                    "Target": "0x010000000000066D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_BD8E080E",
+            "Id": "0x010000000000066D",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "DAUGHTER FIND IT MUCH JOYFUL! GIVE HER BIG SMILEY, H’YUP! H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 3900.0,
+              "y": 900.0
+            },
+            "ZIndex": 54.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3180201998,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000670",
+                "Owner": "0x010000000000066D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000671",
+                "Owner": "0x010000000000066D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000677",
+                    "Target": "0x0100000000000674"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9A406F06",
+            "Id": "0x0100000000000674",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Your daughter? Where is she?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4175.0,
+              "y": 900.0
+            },
+            "ZIndex": 56.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2587913990,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000677",
+                "Owner": "0x0100000000000674"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000678",
+                "Owner": "0x0100000000000674",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000067E",
+                    "Target": "0x010000000000067B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_316DFD8E",
+            "Id": "0x010000000000067B",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "OH, MY BEUTATIOUS LOCKETTE, WISH TO GREET THE YOU TO SHE!?",
+            "ExternalId": "",
+            "Position": {
+              "x": 4450.0,
+              "y": 900.0
+            },
+            "ZIndex": 58.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 829291918,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000067E",
+                "Owner": "0x010000000000067B"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000067F",
+                "Owner": "0x010000000000067B",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000685",
+                    "Target": "0x0100000000000682"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B4348B11",
+            "Id": "0x0100000000000682",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "LOCKETTE, OH LOCKETTE COME’E TO PAPPY!",
+            "ExternalId": "",
+            "Position": {
+              "x": 4725.0,
+              "y": 900.0
+            },
+            "ZIndex": 60.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3023342353,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000685",
+                "Owner": "0x0100000000000682"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000686",
+                "Owner": "0x0100000000000682",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000068C",
+                    "Target": "0x0100000000000689"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_54C379B5",
+            "Id": "0x0100000000000689",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "…",
+            "ExternalId": "",
+            "Position": {
+              "x": 5000.0,
+              "y": 900.0
+            },
+            "ZIndex": 62.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1422096821,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000068C",
+                "Owner": "0x0100000000000689"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000068D",
+                "Owner": "0x0100000000000689",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000693",
+                    "Target": "0x0100000000000690"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_B1F05318",
+            "Id": "0x0100000000000690",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "LOCKETTE…?",
+            "ExternalId": "",
+            "Position": {
+              "x": 5275.0,
+              "y": 900.0
+            },
+            "ZIndex": 64.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2985317144,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000693",
+                "Owner": "0x0100000000000690"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000694",
+                "Owner": "0x0100000000000690",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000069A",
+                    "Target": "0x0100000000000697"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_93D7F053",
+            "Id": "0x0100000000000697",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I BELIEVE LOCKETTE TO HAVE RUNOFF, H’YUP…!",
+            "ExternalId": "",
+            "Position": {
+              "x": 5550.0,
+              "y": 900.0
+            },
+            "ZIndex": 66.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2480402515,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000069A",
+                "Owner": "0x0100000000000697"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000069B",
+                "Owner": "0x0100000000000697",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006A1",
+                    "Target": "0x010000000000069E"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_2EF4EE16",
+            "Id": "0x010000000000069E",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Uh oh… well why don’t you go look for her while I just-",
+            "ExternalId": "",
+            "Position": {
+              "x": 5825.0,
+              "y": 900.0
+            },
+            "ZIndex": 68.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 787803670,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006A1",
+                "Owner": "0x010000000000069E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006A2",
+                "Owner": "0x010000000000069E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006A8",
+                    "Target": "0x01000000000006A5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_8915784A",
+            "Id": "0x01000000000006A5",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "NO! THE I MUST’NT LEAVE POST FOR ONE BLINKY EYE.",
+            "ExternalId": "",
+            "Position": {
+              "x": 6100.0,
+              "y": 900.0
+            },
+            "ZIndex": 70.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2299885642,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006A8",
+                "Owner": "0x01000000000006A5"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006A9",
+                "Owner": "0x01000000000006A5",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006AF",
+                    "Target": "0x01000000000006AC"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_0ADADD70",
+            "Id": "0x01000000000006AC",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "KIMBO: YOU! NEWEST FRIEND!",
+            "ExternalId": "",
+            "Position": {
+              "x": 6375.0,
+              "y": 900.0
+            },
+            "ZIndex": 72.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 182115696,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006AF",
+                "Owner": "0x01000000000006AC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006B0",
+                "Owner": "0x01000000000006AC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006B6",
+                    "Target": "0x01000000000006B3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_C04A08A2",
+            "Id": "0x01000000000006B3",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "M-me?",
+            "ExternalId": "",
+            "Position": {
+              "x": 6650.0,
+              "y": 900.0
+            },
+            "ZIndex": 74.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 3226077346,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006B6",
+                "Owner": "0x01000000000006B3"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006B7",
+                "Owner": "0x01000000000006B3",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006BD",
+                    "Target": "0x01000000000006BA"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_52FC755C",
+            "Id": "0x01000000000006BA",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I REQUIRES A TITLE! PRONOUNS AND ALL’E, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 6925.0,
+              "y": 900.0
+            },
+            "ZIndex": 76.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1392276828,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006BD",
+                "Owner": "0x01000000000006BA"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006BE",
+                "Owner": "0x01000000000006BA",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006C4",
+                    "Target": "0x01000000000006C1"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_3F69434D",
+            "Id": "0x01000000000006C1",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Ah, uh, Francis. They/Them.",
+            "ExternalId": "",
+            "Position": {
+              "x": 7200.0,
+              "y": 900.0
+            },
+            "ZIndex": 78.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1063863117,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006C4",
+                "Owner": "0x01000000000006C1"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006C5",
+                "Owner": "0x01000000000006C1",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006CB",
+                    "Target": "0x01000000000006C8"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_53278B6B",
+            "Id": "0x01000000000006C8",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "FRANCEY? PREET YET HANDLESOME!",
+            "ExternalId": "",
+            "Position": {
+              "x": 7475.0,
+              "y": 900.0
+            },
+            "ZIndex": 80.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1395100523,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006CB",
+                "Owner": "0x01000000000006C8"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006CC",
+                "Owner": "0x01000000000006C8",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006D2",
+                    "Target": "0x01000000000006CF"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_A388116B",
+            "Id": "0x01000000000006CF",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE YOU DO KIMBO FAVOR! H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 7750.0,
+              "y": 900.0
+            },
+            "ZIndex": 82.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2743603563,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006D2",
+                "Owner": "0x01000000000006CF"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006D3",
+                "Owner": "0x01000000000006CF",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006D9",
+                    "Target": "0x01000000000006D6"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_623CF572",
+            "Id": "0x01000000000006D6",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "The I does not agree to this.",
+            "ExternalId": "",
+            "Position": {
+              "x": 8050.0,
+              "y": 900.0
+            },
+            "ZIndex": 84.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1648162162,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006D9",
+                "Owner": "0x01000000000006D6"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006DA",
+                "Owner": "0x01000000000006D6",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006E0",
+                    "Target": "0x01000000000006DD"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_4F7BEACC",
+            "Id": "0x01000000000006DD",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "NO! FRANCEY NEW FRIEND WHO DO FAVORS! THE YOU FIND BEAUTATIOUS LOCKETTE FOR KIMBO?",
+            "ExternalId": "",
+            "Position": {
+              "x": 8325.0,
+              "y": 900.0
+            },
+            "ZIndex": 86.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1333521100,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006E0",
+                "Owner": "0x01000000000006DD"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006E1",
+                "Owner": "0x01000000000006DD",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006E7",
+                    "Target": "0x01000000000006E4"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_5C0CC811",
+            "Id": "0x01000000000006E4",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I MAY DO YOU A FAVOR IN RETURN, YES, YES KIMBO VOW TRUST’E, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 8600.0,
+              "y": 900.0
+            },
+            "ZIndex": 88.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1544341521,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006E7",
+                "Owner": "0x01000000000006E4"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006E8",
+                "Owner": "0x01000000000006E4",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006EE",
+                    "Target": "0x01000000000006EB"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_2FD8C84B",
+            "Id": "0x01000000000006EB",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Favor? Like, anything?",
+            "ExternalId": "",
+            "Position": {
+              "x": 8875.0,
+              "y": 900.0
+            },
+            "ZIndex": 90.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 802736203,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006EE",
+                "Owner": "0x01000000000006EB"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006EF",
+                "Owner": "0x01000000000006EB",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006F5",
+                    "Target": "0x01000000000006F2"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_58ED503C",
+            "Id": "0x01000000000006F2",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "THE I FIGHTS TO THE DEATH FOR NEW FRIEND FRANCEY IF ASK, H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 9175.0,
+              "y": 900.0
+            },
+            "ZIndex": 92.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 1491947580,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006F5",
+                "Owner": "0x01000000000006F2"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006F6",
+                "Owner": "0x01000000000006F2",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000006FC",
+                    "Target": "0x01000000000006F9"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_9E1139EA",
+            "Id": "0x01000000000006F9",
+            "Parent": "0x01000000000005AB",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x0100000000000229",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "FIND THE SWEETIE PIE AND KIMBO PRIVILEGE IS FOR THE YOU, H’YUP! H’YUP!",
+            "ExternalId": "",
+            "Position": {
+              "x": 9450.0,
+              "y": 900.0
+            },
+            "ZIndex": 94.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2651929066,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006FC",
+                "Owner": "0x01000000000006F9"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000006FD",
+                "Owner": "0x01000000000006F9"
+              }
+            ]
+          }
+        },
+        {
           "Type": "Hub",
           "Properties": {
             "TechnicalName": "Hub_EDFD591B",
@@ -7036,6 +9768,81 @@
                     "Label": "",
                     "TargetPin": "0x01000000000003E5",
                     "Target": "0x01000000000003E3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Hub",
+          "Properties": {
+            "TechnicalName": "Hub_DDF44618",
+            "Id": "0x0100000000000602",
+            "Parent": "0x01000000000005AB",
+            "DisplayName": "Untitled hub",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 2850.0,
+              "y": 725.0
+            },
+            "ZIndex": 24.0,
+            "Size": {
+              "w": 175.0,
+              "h": 50.0
+            },
+            "ShortId": 3723773464,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000604",
+                "Owner": "0x0100000000000602"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000605",
+                "Owner": "0x0100000000000602",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000060B",
+                    "Target": "0x0100000000000608"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000611",
+                    "Target": "0x010000000000060E"
+                  },
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000617",
+                    "Target": "0x0100000000000614"
                   }
                 ]
               }
@@ -7124,7 +9931,7 @@
             "Text": "",
             "ExternalId": "",
             "Position": {
-              "x": 475.0,
+              "x": 225.0,
               "y": 150.0
             },
             "ZIndex": 40.0,
@@ -7534,6 +10341,137 @@
           }
         },
         {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_39231468",
+            "Id": "0x01000000000005B2",
+            "Parent": "0x01000000000005AB",
+            "DisplayName": "Lockette.HasBeenFound",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 650.0,
+              "y": 325.0
+            },
+            "ZIndex": 40.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 958600296,
+            "Expression": "Lockette.HasBeenFound",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005B3",
+                "Owner": "0x01000000000005B2"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005B4",
+                "Owner": "0x01000000000005B2",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005F7",
+                    "Target": "0x01000000000005F4"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x01000000000005B5",
+                "Owner": "0x01000000000005B2"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_D8931330",
+            "Id": "0x01000000000005B7",
+            "Parent": "0x01000000000005AB",
+            "DisplayName": "KIMBO.HasBeenTalkedTo",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 399.80000000000007,
+              "y": 517.4
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3633517360,
+            "Expression": "KIMBO.HasBeenTalkedTo",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005B8",
+                "Owner": "0x01000000000005B7"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005B9",
+                "Owner": "0x01000000000005B7",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005B3",
+                    "Target": "0x01000000000005B2"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x01000000000005BA",
+                "Owner": "0x01000000000005B7",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005BD",
+                    "Target": "0x01000000000005BC"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "Type": "Instruction",
           "Properties": {
             "TechnicalName": "Ins_DC458B24",
@@ -7793,6 +10731,60 @@
         {
           "Type": "Instruction",
           "Properties": {
+            "TechnicalName": "Ins_6EEDBF84",
+            "Id": "0x010000000000059D",
+            "Parent": "0x0100000000000429",
+            "DisplayName": "LoadFloorScene()",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 1750.0,
+              "y": 575.0
+            },
+            "ZIndex": 7.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 1861074820,
+            "Expression": "LoadFloorScene()",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000059F",
+                "Owner": "0x010000000000059D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005A0",
+                "Owner": "0x010000000000059D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000042D",
+                    "Target": "0x0100000000000429"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Instruction",
+          "Properties": {
             "TechnicalName": "Ins_DD2C2093",
             "Id": "0x0100000000000545",
             "Parent": "0x010000000000052A",
@@ -7838,6 +10830,60 @@
                     "Label": "",
                     "TargetPin": "0x010000000000052E",
                     "Target": "0x010000000000052A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Instruction",
+          "Properties": {
+            "TechnicalName": "Ins_B5F3E080",
+            "Id": "0x01000000000005BC",
+            "Parent": "0x01000000000005AB",
+            "DisplayName": "KIMBO.HasBeenTalkedTo = true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 650.0,
+              "y": 700.0
+            },
+            "ZIndex": 74.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3052658816,
+            "Expression": "KIMBO.HasBeenTalkedTo = true\n",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005BD",
+                "Owner": "0x01000000000005BC"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x01000000000005BE",
+                "Owner": "0x01000000000005BC",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x01000000000005C6",
+                    "Target": "0x01000000000005C3"
                   }
                 ]
               }
@@ -8047,6 +11093,43 @@
               "Asset": "0x01000000000001DB"
             },
             "ShortId": 311520628
+          }
+        },
+        {
+          "Type": "Entity",
+          "Properties": {
+            "TechnicalName": "Ntt_D49DC2FA",
+            "Id": "0x0100000000000582",
+            "Parent": "0x03000000AC61A2B3",
+            "Attachments": [],
+            "DisplayName": "???",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 100.0,
+              "y": 100.0
+            },
+            "ZIndex": 5.0,
+            "Size": {
+              "w": 256.0,
+              "h": 196.0
+            },
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "ShortId": 3567108858
           }
         },
         {
@@ -8300,6 +11383,10 @@
   "ScriptMethods": [
     {
       "Name": "LoadFallScene",
+      "ReturnType": "void"
+    },
+    {
+      "Name": "LoadFloorScene",
       "ReturnType": "void"
     },
     {
@@ -8794,7 +11881,39 @@
           {
             "Id": "0x0100000000000429",
             "TechnicalName": "Dlg_A0459071",
-            "Type": "Dialogue"
+            "Type": "Dialogue",
+            "Children": [
+              {
+                "Id": "0x0100000000000563",
+                "TechnicalName": "DFr_BA9260AC",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000587",
+                "TechnicalName": "DFr_52097229",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000058E",
+                "TechnicalName": "DFr_2B47AEAD",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000593",
+                "TechnicalName": "DFr_5503BAB6",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000598",
+                "TechnicalName": "DFr_09B24348",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000059D",
+                "TechnicalName": "Ins_6EEDBF84",
+                "Type": "Instruction"
+              }
+            ]
           },
           {
             "Id": "0x010000000000042F",
@@ -8825,6 +11944,253 @@
                 "Id": "0x0100000000000545",
                 "TechnicalName": "Ins_DD2C2093",
                 "Type": "Instruction"
+              }
+            ]
+          },
+          {
+            "Id": "0x01000000000005AB",
+            "TechnicalName": "Dlg_F182966D",
+            "Type": "Dialogue",
+            "Children": [
+              {
+                "Id": "0x01000000000005B2",
+                "TechnicalName": "Cnd_39231468",
+                "Type": "Condition"
+              },
+              {
+                "Id": "0x01000000000005B7",
+                "TechnicalName": "Cnd_D8931330",
+                "Type": "Condition"
+              },
+              {
+                "Id": "0x01000000000005BC",
+                "TechnicalName": "Ins_B5F3E080",
+                "Type": "Instruction"
+              },
+              {
+                "Id": "0x01000000000005C3",
+                "TechnicalName": "DFr_6534A384",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005C8",
+                "TechnicalName": "DFr_10152790",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005CD",
+                "TechnicalName": "DFr_A04BA8DE",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005D2",
+                "TechnicalName": "DFr_84FD8EAA",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005DB",
+                "TechnicalName": "DFr_D0C73DD6",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005E0",
+                "TechnicalName": "DFr_B01221D0",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005E5",
+                "TechnicalName": "DFr_50B68125",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005F4",
+                "TechnicalName": "DFr_0CB10224",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000005FB",
+                "TechnicalName": "DFr_A5036918",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000602",
+                "TechnicalName": "Hub_DDF44618",
+                "Type": "Hub"
+              },
+              {
+                "Id": "0x0100000000000608",
+                "TechnicalName": "DFr_A1A3FA04",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000060E",
+                "TechnicalName": "DFr_DE5B5370",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000614",
+                "TechnicalName": "DFr_EF046781",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000061E",
+                "TechnicalName": "DFr_01F3F40A",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000624",
+                "TechnicalName": "DFr_6C80558A",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000062A",
+                "TechnicalName": "DFr_6CF4E3B2",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000631",
+                "TechnicalName": "DFr_C5C92044",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000638",
+                "TechnicalName": "DFr_F4B4E2E7",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000063F",
+                "TechnicalName": "DFr_C8A18170",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000648",
+                "TechnicalName": "DFr_4D9643A8",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000064F",
+                "TechnicalName": "DFr_B989E175",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000656",
+                "TechnicalName": "DFr_1F8D1DC6",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000065D",
+                "TechnicalName": "DFr_6064B38D",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000666",
+                "TechnicalName": "DFr_877C7E1C",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000066D",
+                "TechnicalName": "DFr_BD8E080E",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000674",
+                "TechnicalName": "DFr_9A406F06",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000067B",
+                "TechnicalName": "DFr_316DFD8E",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000682",
+                "TechnicalName": "DFr_B4348B11",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000689",
+                "TechnicalName": "DFr_54C379B5",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000690",
+                "TechnicalName": "DFr_B1F05318",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000697",
+                "TechnicalName": "DFr_93D7F053",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000069E",
+                "TechnicalName": "DFr_2EF4EE16",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006A5",
+                "TechnicalName": "DFr_8915784A",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006AC",
+                "TechnicalName": "DFr_0ADADD70",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006B3",
+                "TechnicalName": "DFr_C04A08A2",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006BA",
+                "TechnicalName": "DFr_52FC755C",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006C1",
+                "TechnicalName": "DFr_3F69434D",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006C8",
+                "TechnicalName": "DFr_53278B6B",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006CF",
+                "TechnicalName": "DFr_A388116B",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006D6",
+                "TechnicalName": "DFr_623CF572",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006DD",
+                "TechnicalName": "DFr_4F7BEACC",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006E4",
+                "TechnicalName": "DFr_5C0CC811",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006EB",
+                "TechnicalName": "DFr_2FD8C84B",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006F2",
+                "TechnicalName": "DFr_58ED503C",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x01000000000006F9",
+                "TechnicalName": "DFr_9E1139EA",
+                "Type": "DialogueFragment"
               }
             ]
           }
@@ -8863,6 +12229,11 @@
           {
             "Id": "0x0100000000000231",
             "TechnicalName": "Ntt_12916D74",
+            "Type": "Entity"
+          },
+          {
+            "Id": "0x0100000000000582",
+            "TechnicalName": "Ntt_D49DC2FA",
             "Type": "Entity"
           }
         ]
@@ -9118,6 +12489,11 @@
           },
           {
             "Id": "0x01000000000003B6",
+            "TechnicalName": "",
+            "Type": "VariableSet"
+          },
+          {
+            "Id": "0x010000000000056E",
             "TechnicalName": "",
             "Type": "VariableSet"
           }

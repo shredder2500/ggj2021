@@ -14,9 +14,15 @@ namespace src.Dialogue
       _articyFlowPlayer = GetComponentInParent<ArticyFlowPlayer>();
     }
 
-    public void Play()
+    public void Play() => Play(false);
+
+    public void Play(bool callPlay)
     {
       _articyFlowPlayer.StartOn = dialogue.GetObject();
+      if (callPlay)
+      {
+        _articyFlowPlayer.Play();
+      }
     }
   }
 }

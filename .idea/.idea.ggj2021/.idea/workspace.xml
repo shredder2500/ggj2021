@@ -21,13 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/test haha.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/test haha.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Option.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Option.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Table.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Table.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Table.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Table.unity.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +68,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/Windows\ggj2021.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="F:\projects\ggj2021\Builds\Windows" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -103,7 +106,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="16628000" />
+      <workItem from="1611961756024" duration="18325000" />
     </task>
     <servers />
   </component>

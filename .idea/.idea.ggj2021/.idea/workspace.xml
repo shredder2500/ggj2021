@@ -20,30 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/src/Controllers/SortOnY.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Controllers/SortOnY.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueSpeaker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueSpeaker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Interactions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Placeholders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Placeholders/Player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Placeholders/Player.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Controls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Controls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Controllers/MovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Controllers/MovementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/input/Controls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/input/Controls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lose Change/Partitions/'Flow'-TypedPartition(77f7d193-0ef2-46ed-a67d-62721ea4289c).adpd" beforeDir="false" afterPath="$PROJECT_DIR$/Lose Change/Partitions/'Flow'-TypedPartition(77f7d193-0ef2-46ed-a67d-62721ea4289c).adpd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lose Change/Sessions/SessionData_LocalUser.adpd" beforeDir="false" afterPath="$PROJECT_DIR$/Lose Change/Sessions/SessionData_LocalUser.adpd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +47,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueSpeaker.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Controllers/MovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Controllers/SortOnY.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" />
       </list>
     </option>
   </component>
@@ -117,7 +103,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="3516000" />
+      <workItem from="1611961756024" duration="4387000" />
     </task>
     <servers />
   </component>
@@ -142,10 +128,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="758" y="226" key="RiderGenerateDialog" timestamp="1611844197177">
+    <state x="758" y="226" key="RiderGenerateDialog" timestamp="1611969603375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="758" y="226" key="RiderGenerateDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1611844197177" />
+    <state x="758" y="226" key="RiderGenerateDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1611969603375" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1611961908630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -5,8 +5,8 @@
     "set_IncludedNodes": "Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets",
     "set_UseScriptSupport": "True",
     "ExportVersion": "1.2",
-    "ObjectDefinitionsHash": "4A8028D3C16112E626BF585B013320DD5358C2B5A034FC0D48F830146CCABD6C",
-    "ScriptFragmentsHash": "9664187520"
+    "ObjectDefinitionsHash": "7A877520F5D90913E765530F8ED1D9C5DD0854078B7BB559438DEB725225C17B",
+    "ScriptFragmentsHash": "1517307884"
   },
   "Project": {
     "Name": "Lose Change",
@@ -19,12 +19,6 @@
       "Namespace": "Angus",
       "Description": "",
       "Variables": [
-        {
-          "Variable": "HasReceivedCigar",
-          "Type": "Boolean",
-          "Value": "False",
-          "Description": "Does Angus have the cigar?"
-        },
         {
           "Variable": "HasBeenTalkedTo",
           "Type": "Boolean",
@@ -78,6 +72,12 @@
           "Type": "Boolean",
           "Value": "False",
           "Description": "Does the player have the pink pin?"
+        },
+        {
+          "Variable": "Cigar",
+          "Type": "Boolean",
+          "Value": "False",
+          "Description": "Does the player have the cigar?"
         }
       ]
     }
@@ -2515,6 +2515,70 @@
                 "Text": "",
                 "Id": "0x0100000000000433",
                 "Owner": "0x010000000000042F"
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Dialogue",
+          "Properties": {
+            "TechnicalName": "Dlg_88E56ACA",
+            "Id": "0x010000000000052A",
+            "Parent": "0x0300000043CE43F7",
+            "Attachments": [],
+            "DisplayName": "Cigar",
+            "PreviewImage": {
+              "ViewBox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              },
+              "Mode": "FromAsset",
+              "Asset": "0x0000000000000000"
+            },
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 92.0,
+              "y": 100.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 291.0,
+              "h": 200.0
+            },
+            "ShortId": 2296736458,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000052D",
+                "Owner": "0x010000000000052A",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000533",
+                    "Target": "0x0100000000000531"
+                  }
+                ]
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000052E",
+                "Owner": "0x010000000000052A"
               }
             ]
           }
@@ -6549,13 +6613,13 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.577580452,
-                      "g": 0.7605245,
-                      "b": 0.7991027
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
                     },
                     "Label": "",
-                    "TargetPin": "0x0100000000000427",
-                    "Target": "0x0100000000000423"
+                    "TargetPin": "0x010000000000055F",
+                    "Target": "0x010000000000055D"
                   }
                 ]
               }
@@ -6776,6 +6840,116 @@
                     "Label": "",
                     "TargetPin": "0x01000000000004F8",
                     "Target": "0x01000000000004F5"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_F31141B1",
+            "Id": "0x0100000000000537",
+            "Parent": "0x010000000000052A",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "Phew, whatever this is, it's quite pungent.",
+            "ExternalId": "",
+            "Position": {
+              "x": 525.0,
+              "y": 350.0
+            },
+            "ZIndex": 2.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 4077994417,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000053A",
+                "Owner": "0x0100000000000537"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000053B",
+                "Owner": "0x0100000000000537",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000052E",
+                    "Target": "0x010000000000052A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "DialogueFragment",
+          "Properties": {
+            "TechnicalName": "DFr_78E1CCD8",
+            "Id": "0x010000000000053E",
+            "Parent": "0x010000000000052A",
+            "MenuText": "",
+            "StageDirections": "",
+            "Speaker": "0x010000000000021C",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "Text": "It has a distinct smell. Makes you feel important just from holding it.",
+            "ExternalId": "",
+            "Position": {
+              "x": 525.0,
+              "y": 125.0
+            },
+            "ZIndex": 4.0,
+            "Size": {
+              "w": 225.0,
+              "h": 200.0
+            },
+            "ShortId": 2028063960,
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000541",
+                "Owner": "0x010000000000053E"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000542",
+                "Owner": "0x010000000000053E",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000547",
+                    "Target": "0x0100000000000545"
                   }
                 ]
               }
@@ -7149,7 +7323,7 @@
             "TechnicalName": "Cnd_B183E3DE",
             "Id": "0x010000000000043C",
             "Parent": "0x0100000000000423",
-            "DisplayName": "Angus.HasReceivedCigar",
+            "DisplayName": "Items.Cigar",
             "Text": "",
             "ExternalId": "",
             "Position": {
@@ -7162,7 +7336,7 @@
               "h": 100.0
             },
             "ShortId": 2978210782,
-            "Expression": "Angus.HasReceivedCigar",
+            "Expression": "Items.Cigar",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -7281,6 +7455,78 @@
                     "Label": "",
                     "TargetPin": "0x0100000000000525",
                     "Target": "0x0100000000000523"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Condition",
+          "Properties": {
+            "TechnicalName": "Cnd_2EC024DE",
+            "Id": "0x0100000000000531",
+            "Parent": "0x010000000000052A",
+            "DisplayName": "Angus.HasBeenTalkedTo",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 200.0,
+              "y": 300.0
+            },
+            "ZIndex": 0.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 784344286,
+            "Expression": "Angus.HasBeenTalkedTo",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000533",
+                "Owner": "0x0100000000000531"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000534",
+                "Owner": "0x0100000000000531",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000541",
+                    "Target": "0x010000000000053E"
+                  }
+                ]
+              },
+              {
+                "Text": "",
+                "Id": "0x0100000000000535",
+                "Owner": "0x0100000000000531",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000053A",
+                    "Target": "0x0100000000000537"
                   }
                 ]
               }
@@ -7484,6 +7730,114 @@
                     "Label": "",
                     "TargetPin": "0x010000000000044D",
                     "Target": "0x010000000000044A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Instruction",
+          "Properties": {
+            "TechnicalName": "Ins_DD2C2093",
+            "Id": "0x0100000000000545",
+            "Parent": "0x010000000000052A",
+            "DisplayName": "Items.Cigar = true",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 825.0,
+              "y": 175.0
+            },
+            "ZIndex": 6.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 3710656659,
+            "Expression": "Items.Cigar = true",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000547",
+                "Owner": "0x0100000000000545"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000548",
+                "Owner": "0x0100000000000545",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x010000000000052E",
+                    "Target": "0x010000000000052A"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Instruction",
+          "Properties": {
+            "TechnicalName": "Ins_8F50D1DC",
+            "Id": "0x010000000000055D",
+            "Parent": "0x0100000000000423",
+            "DisplayName": "LoadFallScene()",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 4200.0,
+              "y": 825.0
+            },
+            "ZIndex": 61.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 2404438492,
+            "Expression": "LoadFallScene()",
+            "Color": {
+              "r": 0.5764706,
+              "g": 0.75686276,
+              "b": 0.8
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000055F",
+                "Owner": "0x010000000000055D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000560",
+                "Owner": "0x010000000000055D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.5764706,
+                      "g": 0.75686276,
+                      "b": 0.8
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000427",
+                    "Target": "0x0100000000000423"
                   }
                 ]
               }
@@ -7943,7 +8297,12 @@
       ]
     }
   ],
-  "ScriptMethods": [],
+  "ScriptMethods": [
+    {
+      "Name": "LoadFallScene",
+      "ReturnType": "void"
+    }
+  ],
   "Hierarchy": {
     "Id": "0x0100000000000001",
     "TechnicalName": "Lose_Change",
@@ -8420,6 +8779,11 @@
                 "Id": "0x0100000000000523",
                 "TechnicalName": "Ins_B6E6F6E8",
                 "Type": "Instruction"
+              },
+              {
+                "Id": "0x010000000000055D",
+                "TechnicalName": "Ins_8F50D1DC",
+                "Type": "Instruction"
               }
             ]
           },
@@ -8432,6 +8796,33 @@
             "Id": "0x010000000000042F",
             "TechnicalName": "Dlg_FBF05563",
             "Type": "Dialogue"
+          },
+          {
+            "Id": "0x010000000000052A",
+            "TechnicalName": "Dlg_88E56ACA",
+            "Type": "Dialogue",
+            "Children": [
+              {
+                "Id": "0x0100000000000531",
+                "TechnicalName": "Cnd_2EC024DE",
+                "Type": "Condition"
+              },
+              {
+                "Id": "0x0100000000000537",
+                "TechnicalName": "DFr_F31141B1",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x010000000000053E",
+                "TechnicalName": "DFr_78E1CCD8",
+                "Type": "DialogueFragment"
+              },
+              {
+                "Id": "0x0100000000000545",
+                "TechnicalName": "Ins_DD2C2093",
+                "Type": "Instruction"
+              }
+            ]
           }
         ]
       },

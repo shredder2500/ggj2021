@@ -86,6 +86,7 @@
             <e p="DialogueController.cs" t="Include" />
             <e p="DialoguePlayer.cs" t="Include" />
             <e p="DialogueSpeaker.cs" t="Include" />
+            <e p="ScriptProvider.cs" t="Include" />
           </e>
           <e p="input" t="Include">
             <e p="Controls.cs" t="Include" />

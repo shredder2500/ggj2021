@@ -16,7 +16,7 @@ namespace src.Interactions
     {
       if (other.CompareTag("Player"))
       {
-        onPlayerEnter.Invoke();
+        onPlayerEnter?.Invoke();
         controls.Interact += onInteract.Invoke;
       }
     }
@@ -25,7 +25,7 @@ namespace src.Interactions
     {
       if (other.CompareTag("Player"))
       {
-        onPlayerExit.Invoke();
+        onPlayerExit?.Invoke();
         controls.Interact -= onInteract.Invoke;
       }
     }

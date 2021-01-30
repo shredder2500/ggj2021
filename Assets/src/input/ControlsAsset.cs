@@ -8,6 +8,7 @@ public class ControlsAsset : ScriptableObject
   
   public event Action<Vector2> OnMoveInput;
   public event Action Interact;
+  public event Action Submit;
 
   public void Init()
   {

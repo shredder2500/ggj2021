@@ -6,7 +6,7 @@
     "set_UseScriptSupport": "True",
     "ExportVersion": "1.2",
     "ObjectDefinitionsHash": "7A877520F5D90913E765530F8ED1D9C5DD0854078B7BB559438DEB725225C17B",
-    "ScriptFragmentsHash": "1517307884"
+    "ScriptFragmentsHash": "1833774840"
   },
   "Project": {
     "Name": "Lose Change",
@@ -5903,7 +5903,7 @@
               "g": 0.7605245,
               "b": 0.7991027
             },
-            "Text": "Well, I try.",
+            "Text": "Yeah, I try.",
             "ExternalId": "",
             "Position": {
               "x": 825.0,
@@ -6613,9 +6613,9 @@
                   {
                     "Color": {
                       "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
                     },
                     "Label": "",
                     "TargetPin": "0x010000000000055F",
@@ -7739,10 +7739,64 @@
         {
           "Type": "Instruction",
           "Properties": {
+            "TechnicalName": "Ins_8F50D1DC",
+            "Id": "0x010000000000055D",
+            "Parent": "0x0100000000000423",
+            "DisplayName": "LoadFallScene()",
+            "Text": "",
+            "ExternalId": "",
+            "Position": {
+              "x": 4200.0,
+              "y": 825.0
+            },
+            "ZIndex": 61.0,
+            "Size": {
+              "w": 225.0,
+              "h": 100.0
+            },
+            "ShortId": 2404438492,
+            "Expression": "LoadFallScene()",
+            "Color": {
+              "r": 0.577580452,
+              "g": 0.7605245,
+              "b": 0.7991027
+            },
+            "InputPins": [
+              {
+                "Text": "",
+                "Id": "0x010000000000055F",
+                "Owner": "0x010000000000055D"
+              }
+            ],
+            "OutputPins": [
+              {
+                "Text": "",
+                "Id": "0x0100000000000560",
+                "Owner": "0x010000000000055D",
+                "Connections": [
+                  {
+                    "Color": {
+                      "a": 1.0,
+                      "r": 0.577580452,
+                      "g": 0.7605245,
+                      "b": 0.7991027
+                    },
+                    "Label": "",
+                    "TargetPin": "0x0100000000000427",
+                    "Target": "0x0100000000000423"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Instruction",
+          "Properties": {
             "TechnicalName": "Ins_DD2C2093",
             "Id": "0x0100000000000545",
             "Parent": "0x010000000000052A",
-            "DisplayName": "Items.Cigar = true",
+            "DisplayName": "Items.Cigar = true;",
             "Text": "",
             "ExternalId": "",
             "Position": {
@@ -7755,7 +7809,7 @@
               "h": 100.0
             },
             "ShortId": 3710656659,
-            "Expression": "Items.Cigar = true",
+            "Expression": "Items.Cigar = true;\nHideCigarSprite();\n",
             "Color": {
               "r": 0.577580452,
               "g": 0.7605245,
@@ -7784,60 +7838,6 @@
                     "Label": "",
                     "TargetPin": "0x010000000000052E",
                     "Target": "0x010000000000052A"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "Type": "Instruction",
-          "Properties": {
-            "TechnicalName": "Ins_8F50D1DC",
-            "Id": "0x010000000000055D",
-            "Parent": "0x0100000000000423",
-            "DisplayName": "LoadFallScene()",
-            "Text": "",
-            "ExternalId": "",
-            "Position": {
-              "x": 4200.0,
-              "y": 825.0
-            },
-            "ZIndex": 61.0,
-            "Size": {
-              "w": 225.0,
-              "h": 100.0
-            },
-            "ShortId": 2404438492,
-            "Expression": "LoadFallScene()",
-            "Color": {
-              "r": 0.5764706,
-              "g": 0.75686276,
-              "b": 0.8
-            },
-            "InputPins": [
-              {
-                "Text": "",
-                "Id": "0x010000000000055F",
-                "Owner": "0x010000000000055D"
-              }
-            ],
-            "OutputPins": [
-              {
-                "Text": "",
-                "Id": "0x0100000000000560",
-                "Owner": "0x010000000000055D",
-                "Connections": [
-                  {
-                    "Color": {
-                      "a": 1.0,
-                      "r": 0.5764706,
-                      "g": 0.75686276,
-                      "b": 0.8
-                    },
-                    "Label": "",
-                    "TargetPin": "0x0100000000000427",
-                    "Target": "0x0100000000000423"
                   }
                 ]
               }
@@ -8300,6 +8300,10 @@
   "ScriptMethods": [
     {
       "Name": "LoadFallScene",
+      "ReturnType": "void"
+    },
+    {
+      "Name": "HideCigarSprite",
       "ReturnType": "void"
     }
   ],

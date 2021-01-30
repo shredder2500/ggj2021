@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Articy.Lose_Change;
@@ -6,6 +7,7 @@ using Articy.Unity.Interfaces;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
@@ -14,32 +16,41 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
   [SerializeField] private Text speakerText;
   [SerializeField] private Image speakerImage;
   [SerializeField] private Canvas dialogueCanvas;
+  [SerializeField] private Transform optionsContainer;
   
-  [SerializeField] private List<Button> optionBtns;
+  [SerializeField] private Button optionBtn;
   [SerializeField] private ControlsAsset controls;
+  [SerializeField] private float displaySpeed = .25f;
 
   private ArticyFlowPlayer _flowPlayer;
+  private List<(string displayText, Branch branch)> _options;
+  private readonly List<GameObject> _btns = new List<GameObject>();
+  public bool skip = true;
 
   private void Start()
   {
     _flowPlayer = GetComponent<ArticyFlowPlayer>();
+    controls.Submit += () => skip = true;
   }
   
   public void OnFlowPlayerPaused(IFlowObject aObject)
   {
+    StopAllCoroutines();
+    _btns.ForEach(Destroy);
     if (aObject == null)
     {
       dialogueCanvas.gameObject.SetActive(false);
-      controls?.EnableGamePlay();
+      controls.EnableGamePlay();
       return;
     }
 
     dialogueCanvas.gameObject.SetActive(true);
-    controls?.DisableGamePlay();
+    controls.DisableGamePlay();
 
     if (aObject is IObjectWithText textObj)
     {
-      dialogueText.text = textObj.Text;
+      dialogueText.text = string.Empty;
+      StartCoroutine(DisplayText(textObj.Text));
     }
 
     if (aObject is IObjectWithSpeaker speakerObj)
@@ -57,18 +68,34 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
     }
   }
 
+  private IEnumerator DisplayText(string text)
+  {
+    skip = false;
+    EventSystem.current.SetSelectedGameObject(null);
+    for (var i = 0; i < text.Length; i++)
+    {
+      dialogueText.text += text[i];
+      if (!skip)
+      {
+        yield return new WaitForSeconds(displaySpeed);
+      }
+    }
+    _options.ForEach(option =>
+    {
+      var btn = Instantiate(optionBtn, optionsContainer);
+      _btns.Add(btn.gameObject);
+      btn.gameObject.SetActive(true);
+      btn.GetComponentInChildren<Text>().text = option.displayText;
+      btn.onClick.AddListener(() => _flowPlayer.Play(option.branch));
+    });
+    EventSystem.current.SetSelectedGameObject(_btns.Last());
+  }
+
   public void OnBranchesUpdated(IList<Branch> aBranches)
   {
-    Assert.IsTrue(aBranches.Count <= optionBtns.Count, $"There are more than {optionBtns.Count} branches but only {optionBtns.Count} buttons setup");
-    optionBtns.ForEach(x =>
-    {
-      x.gameObject.SetActive(false);
-      x.onClick.RemoveAllListeners();
-    });
-
     if (aBranches.Any())
     {
-      var options = aBranches.Aggregate(new List<(string displayText, Branch branch)>(), (list, branch) =>
+      _options = aBranches.Aggregate(new List<(string displayText, Branch branch)>(), (list, branch) =>
       {
         if (branch.IsValid)
         {
@@ -80,15 +107,6 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
           list.Add((text, branch));
         }
         return list;
-      });
-      
-      options.ForEach(option =>
-      {
-        var idx = options.IndexOf(option);
-        var btn = optionBtns[idx];
-        btn.gameObject.SetActive(true);
-        btn.GetComponentInChildren<Text>().text = option.displayText;
-        btn.onClick.AddListener(() => _flowPlayer.Play(option.branch));
       });
     }
   }

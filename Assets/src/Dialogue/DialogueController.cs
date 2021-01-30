@@ -112,6 +112,7 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
         }
         return list;
       });
+      _options.Reverse();
     }
   }
 

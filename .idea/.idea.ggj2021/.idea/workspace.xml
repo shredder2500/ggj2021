@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/test haha.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/test haha.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dialogue Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Option.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Option.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Table.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Table.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/2e/b28a9204/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.5/Runtime/Events/Signals/SignalReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../solid-adventure/Assets/Source/Runtime/Movement/CharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/421852A5-267C-4284-AEC1-A2BA29ECBCE5/ad/a45d93e4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -44,11 +50,11 @@
         <option value="$PROJECT_DIR$/Assets/src/Controllers/MovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Controllers/SortOnY.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/src/input/ControlsAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialoguePlayer.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +103,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="12168000" />
+      <workItem from="1611961756024" duration="16628000" />
     </task>
     <servers />
   </component>

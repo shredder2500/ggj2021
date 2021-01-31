@@ -48,6 +48,16 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
     controls.DisableGamePlay();
     controls.EnableUIControls();
 
+    if (aObject is Dialogue_With_Sound soundObj)
+    {
+      // Debug.Log(soundObj.Template.Dialogue_Sound.DialogueSound.Children[0].Id);
+      var a = (Asset) soundObj.GetFeatureDialogue_Sound().DialogueSound;
+      var sound = a.LoadAsset<AudioClip>();
+      
+      GetComponent<AudioSource>().clip = sound;
+      GetComponent<AudioSource>().Play();
+    }
+
     if (aObject is IObjectWithText textObj)
     {
       dialogueText.text = string.Empty;

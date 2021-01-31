@@ -28,6 +28,7 @@
               <e p="DefaultMainCharacterTemplate.cs" t="Include" />
               <e p="DefaultSupportingCharacterTemplate.cs" t="Include" />
               <e p="Dialogue.cs" t="Include" />
+              <e p="Dialogue_With_Sound.cs" t="Include" />
               <e p="DialogueFragment.cs" t="Include" />
               <e p="Document.cs" t="Include" />
               <e p="Editor" t="Include">
@@ -40,8 +41,11 @@
                 <e p="DefaultBasicCharacterFeatureFeatureConstraint.cs" t="Include" />
                 <e p="DefaultExtendedCharacterFeatureFeature.cs" t="Include" />
                 <e p="DefaultExtendedCharacterFeatureFeatureConstraint.cs" t="Include" />
+                <e p="Dialogue_SoundFeature.cs" t="Include" />
+                <e p="Dialogue_SoundFeatureConstraint.cs" t="Include" />
                 <e p="IObjectWithFeatureDefaultBasicCharacterFeature.cs" t="Include" />
                 <e p="IObjectWithFeatureDefaultExtendedCharacterFeature.cs" t="Include" />
+                <e p="IObjectWithFeatureDialogue_Sound.cs" t="Include" />
               </e>
               <e p="FlowFragment.cs" t="Include" />
               <e p="GlobalVariablesNamespaces.cs" t="Include" />
@@ -71,6 +75,8 @@
                 <e p="DefaultMainCharacterTemplateTemplateConstraint.cs" t="Include" />
                 <e p="DefaultSupportingCharacterTemplateTemplate.cs" t="Include" />
                 <e p="DefaultSupportingCharacterTemplateTemplateConstraint.cs" t="Include" />
+                <e p="Dialogue_With_SoundTemplate.cs" t="Include" />
+                <e p="Dialogue_With_SoundTemplateConstraint.cs" t="Include" />
               </e>
               <e p="TextObject.cs" t="Include" />
               <e p="UserFolder.cs" t="Include" />

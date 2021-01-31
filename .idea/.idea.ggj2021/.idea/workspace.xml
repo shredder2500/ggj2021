@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/Francis.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/Francis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/KIMBO.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/KIMBO.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lose Change/Assets.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Lose Change/Assets.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="24898000" />
+      <workItem from="1611961756024" duration="25560000" />
     </task>
     <servers />
   </component>

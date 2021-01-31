@@ -53,11 +53,14 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
     if (aObject is Dialogue_With_Sound soundObj)
     {
       // Debug.Log(soundObj.Template.Dialogue_Sound.DialogueSound.Children[0].Id);
-      var a = (Asset) soundObj.GetFeatureDialogue_Sound().DialogueSound;
-      var sound = a.LoadAsset<AudioClip>();
-      
-      audioSource.clip = sound;
-      audioSource.Play();
+      var a = soundObj.GetFeatureDialogue_Sound().DialogueSound as Asset;
+      if (a)
+      {
+        var sound = a.LoadAsset<AudioClip>();
+
+        audioSource.clip = sound;
+        audioSource.Play();
+      }
     }
 
     if (aObject is IObjectWithText textObj)

@@ -9,9 +9,15 @@ namespace src.Dialogue
     public UnityEvent onHideCigar;
     public UnityEvent onLoadFallScene;
     public UnityEvent onLoadFloorScene;
+    public UnityEvent onPickUpPin;
+    public UnityEvent onLoadCrackScene;
+    public UnityEvent onHideLockette;
+    public UnityEvent onRemovePinkPin;
     
     public bool IsCalledInForecast { get; set; }
-    
+
+    public void RemovePinkPin() => onRemovePinkPin.Invoke();
+
     public void LoadFallScene()
     {
       if (IsCalledInForecast) return;
@@ -25,11 +31,12 @@ namespace src.Dialogue
       onLoadFloorScene.Invoke();
     }
 
-    public void HideLocketteSprite()
-    {
-      
-    }
+    public void HideLocketteSprite() => onHideLockette.Invoke();
 
     public void HideCigarSprite() => onHideCigar.Invoke();
+    public void PickUpPin() => onPickUpPin.Invoke();
+
+    public void LoadCrackScene() => onLoadCrackScene.Invoke();
+    
   }
 }

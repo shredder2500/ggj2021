@@ -20,23 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/CrackFloorToCrackRoom.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/CrackFloorToCrackRoom.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/CrackRoomToCrackFloor.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/CrackRoomToCrackFloor.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/Signals/LeaveCrackRoom.signal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/Signals/LeaveCrackRoom.signal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/Signals/SwitchToCrackRoomScene.signal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TimeLine/Signals/SwitchToCrackRoomScene.signal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lose Change/Assets/Partition(a3fa11ed-3780-4aa1-bcc8-288af734d270)/RomaPort(00DB).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/LoadScene.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/LoadScene.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/QuitGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/src/QuitGame.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/Roma.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArticyImporter/Content/Resources/Assets/Images/Roma.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lose Change/Partitions/'Assets'-TypedPartition(a3fa11ed-3780-4aa1-bcc8-288af734d270).adpd" beforeDir="false" afterPath="$PROJECT_DIR$/Lose Change/Partitions/'Assets'-TypedPartition(a3fa11ed-3780-4aa1-bcc8-288af734d270).adpd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lose Change/Partitions/'Flow'-TypedPartition(77f7d193-0ef2-46ed-a67d-62721ea4289c).adpd" beforeDir="false" afterPath="$PROJECT_DIR$/Lose Change/Partitions/'Flow'-TypedPartition(77f7d193-0ef2-46ed-a67d-62721ea4289c).adpd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +64,9 @@
         <option value="$PROJECT_DIR$/Assets/src/Interactions/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/ScriptProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Quit.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/QuitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/LoadScene.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +123,7 @@
       <workItem from="1611713620485" duration="3219000" />
       <workItem from="1611844176571" duration="1799000" />
       <workItem from="1611878146929" duration="15959000" />
-      <workItem from="1611961756024" duration="28578000" />
+      <workItem from="1611961756024" duration="29456000" />
     </task>
     <servers />
   </component>

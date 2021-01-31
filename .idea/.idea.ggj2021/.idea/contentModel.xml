@@ -10,6 +10,9 @@
         <e p="Art" t="Include">
           <e p="UI" t="Include">
             <e p="Fonts" t="Include">
+              <e p="d-la-cruz" t="Include">
+                <e p="License - README.txt" t="Include" />
+              </e>
               <e p="south-djakarta" t="Include">
                 <e p="1001fonts-south-djakarta-eula.txt" t="Include" />
               </e>
@@ -112,6 +115,8 @@
             <e p="SceneSwitch.cs" t="Include" />
             <e p="Trigger.cs" t="Include" />
           </e>
+          <e p="LoadScene.cs" t="Include" />
+          <e p="QuitGame.cs" t="Include" />
         </e>
       </e>
       <e p="ggj2021.sln" t="IncludeFlat" />

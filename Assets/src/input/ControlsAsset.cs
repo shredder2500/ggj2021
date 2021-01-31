@@ -10,8 +10,13 @@ public class ControlsAsset : ScriptableObject
   public event Action Interact;
   public event Action Submit;
 
+  public bool GamePlayControlsEnabled;
+  public bool UIControlsEnabled;
+
   public void Init()
   {
+    if (_controls != null) return;
+    
     _controls = new Controls();
     _controls.Enable();
     _controls.GamePlay.Enable();
@@ -21,11 +26,32 @@ public class ControlsAsset : ScriptableObject
     _controls.GamePlay.Interact.performed += _ => Interact?.Invoke();
 
     _controls.UI.Submit.performed += _ => Submit?.Invoke();
+
+    GamePlayControlsEnabled = true;
+    UIControlsEnabled = false;
   }
 
-  public void DisableGamePlay() => _controls.GamePlay.Disable();
-  public void EnableGamePlay() => _controls.GamePlay.Enable();
+  public void DisableGamePlay()
+  {
+    GamePlayControlsEnabled = false;
+    _controls.GamePlay.Disable();
+  }
 
-  public void EnableUIControls() => _controls.UI.Enable();
-  public void DisableUIControls() => _controls.UI.Disable();
+  public void EnableGamePlay()
+  {
+    GamePlayControlsEnabled = true;
+    _controls.GamePlay.Enable();
+  }
+
+  public void EnableUIControls()
+  {
+    UIControlsEnabled = true;
+    _controls.UI.Enable();
+  }
+
+  public void DisableUIControls()
+  {
+    UIControlsEnabled = false;
+    _controls.UI.Disable();
+  }
 }

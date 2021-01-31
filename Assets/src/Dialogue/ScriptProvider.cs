@@ -21,6 +21,7 @@ namespace src.Dialogue
     public void LoadFloorScene()
     {
       if (IsCalledInForecast) return;
+      Debug.Log("LoadFloorScene");
       onLoadFloorScene.Invoke();
     }
 

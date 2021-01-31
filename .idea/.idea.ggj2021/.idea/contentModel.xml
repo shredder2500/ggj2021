@@ -103,6 +103,8 @@
           </e>
           <e p="Interactions" t="Include">
             <e p="Interactable.cs" t="Include" />
+            <e p="SceneSwitch.cs" t="Include" />
+            <e p="Trigger.cs" t="Include" />
           </e>
         </e>
       </e>

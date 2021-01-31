@@ -26,10 +26,12 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
   private List<(string displayText, Branch branch)> _options;
   private readonly List<GameObject> _btns = new List<GameObject>();
   public bool skip = true;
+  private AudioSource audioSource;
 
   private void Start()
   {
     _flowPlayer = GetComponent<ArticyFlowPlayer>();
+    audioSource = GetComponent<AudioSource>();
   }
   
   public void OnFlowPlayerPaused(IFlowObject aObject)
@@ -54,8 +56,8 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
       var a = (Asset) soundObj.GetFeatureDialogue_Sound().DialogueSound;
       var sound = a.LoadAsset<AudioClip>();
       
-      GetComponent<AudioSource>().clip = sound;
-      GetComponent<AudioSource>().Play();
+      audioSource.clip = sound;
+      audioSource.Play();
     }
 
     if (aObject is IObjectWithText textObj)

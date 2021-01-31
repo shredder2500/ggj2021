@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30bccf3b-501a-4d83-b165-52e27528e604" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KIMBO portrait1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/KIMBO portrait1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lose_Change.articyu3d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/src/Dialogue/DialogueController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

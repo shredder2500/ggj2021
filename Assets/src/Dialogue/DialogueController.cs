@@ -102,7 +102,11 @@ public class DialogueController : MonoBehaviour, IArticyFlowPlayerCallbacks
       _btns.Add(btn.gameObject);
       btn.gameObject.SetActive(true);
       btn.GetComponentInChildren<Text>().text = option.displayText;
-      btn.onClick.AddListener(() => _flowPlayer.Play(option.branch));
+      btn.onClick.AddListener(() =>
+      {
+        audioSource.Stop();
+        _flowPlayer.Play(option.branch);
+      });
     });
     EventSystem.current.SetSelectedGameObject(_btns.Last());
   }

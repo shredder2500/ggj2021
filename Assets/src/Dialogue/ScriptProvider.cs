@@ -25,6 +25,11 @@ namespace src.Dialogue
       onLoadFloorScene.Invoke();
     }
 
+    public void HideLocketteSprite()
+    {
+      
+    }
+
     public void HideCigarSprite() => onHideCigar.Invoke();
   }
 }
